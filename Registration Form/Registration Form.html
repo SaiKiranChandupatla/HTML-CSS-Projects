@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Registration Form</title>
+
+        <style>
+            body {
+                background-color: lightgray;
+                font-family: Arial;
+            }
+
+            h1 {
+                text-align: center;
+                color: darkblue;
+            }
+
+            form {
+                background-color: white;
+                max-width: 500px;
+                margin: 30px auto;
+                padding: 30px;
+                border: 1px solid gray;
+                border-radius: 10px;
+            }
+
+            .input-field {
+                width: 100%;
+                padding: 10px;
+                margin-top: 8px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            .form-section {
+                margin-bottom: 5px;
+            }
+
+            .register-btn {
+                background-color: darkblue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .reset-btn {
+                background-color: lightgray;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .register-btn:hover {
+                background-color: blue;
+            }
+
+            .reset-btn:hover {
+                background-color: darkgray;
+            }
+
+        </style>
+
+    </head>
+    
+    <body>
+
+        <h1>Registration Form</h1>
+
+        <form>
+            
+            <div class="form-section">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" class="input-field">
+            </div>
+
+            <br><br>
+
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input-field">
+            </div>
+
+            <br><br>
+
+            <div class="form-section">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input-field">
+            </div>
+            <br><br>
+
+            <div class="form-section">
+                <p>Select your gender:</p>
+                
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <br><br>
+
+            <div class="form-section">
+                <p>Select your skills:</p>
+
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+            
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+                
+                <input type="checkbox" id="javascript" name="skills" value="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <br><br>
+
+            <div class="form-section">
+                <label for="city">City:</label>
+                
+                <select id="city" name="city" class="input-field">
+                    <option value="newyork">New York</option>
+                    <option value="losangeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="houston">Houston</option>
+                    <option value="phoenix">Phoenix</option>
+                </select>
+
+            </div>
+            <br><br>
+
+            <div class="form-section">
+                <label for="about">Tell us about yourself:</label>
+                <textarea id="about" name="about" rows="4" cols="50" class="input-field"></textarea>
+            </div>    
+            <br><br>
+
+            <button type="submit" class="register-btn">Register</button>
+            <button type="reset" class="reset-btn">Reset</button>
+
+        </form>
+    </body>
+</html>
