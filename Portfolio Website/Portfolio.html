@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My Portfolio</title>
+
+        <style>
+            body {
+                background-color: lightgray;
+                font-family: Arial;
+                margin: 0;
+            }
+
+            header {
+                background-color: brown;
+                color: white;
+                padding: 10px 30px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            #home {
+                text-align: center;
+                padding: 50px 20px;
+                background-color: white;
+            }
+
+            #home h2 {
+                color: darkblue;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            #home p {
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+
+            #home button {
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                border: none;
+            }
+
+            #home button:hover {
+                background-color: darkblue;
+            }
+
+            .about-content {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            }
+
+            #about {
+                padding: 40px 20px;
+                background-color: white;
+                max-width: 900px;
+                margin: 30px auto;
+                border-radius: 10px;
+            }
+
+            #about h2 {
+                text-align: center;
+                color: darkblue;
+                margin-bottom: 30px;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            #skills {
+                background-color: white;
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            #skills ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                justify-content: center;
+            }
+
+            #skills li {
+                background-color: black;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+
+            #skills h2 {
+                text-align: center;
+                color: darkblue;
+            }
+
+            #projects {
+                background-color: white;
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            #projects h2 {
+                text-align: center;
+                color: darkblue;
+            }
+
+            .project-card {
+                background-color: lightgray;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 10px;
+            }
+
+            .project-card h3 {
+                color: darkblue;
+            }
+
+            .project-card:hover {
+                box-shadow: 0 4px 8px gray;
+            }
+
+            #contact {
+                background-color: white;
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            #contact h2 {
+                text-align: center;
+                color: darkblue;
+            }
+
+            #contact a {
+                color: darkblue;
+                text-decoration: none;
+            }
+
+            #contact a:hover {
+                text-decoration: underline;
+            }
+
+            footer {
+                background-color: brown;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            @media (max-width: 700px) {
+                header {
+                    flex-direction: column;
+                }
+
+                nav {
+                    margin-top: 10px;
+                }
+
+                nav a {
+                    margin: 0 8px;
+                }
+
+                .about-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Sai Kiran</h1>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </header>
+
+        <section id="home">
+
+            <h2>Welcome to My Portfolio</h2>
+            
+            <p>Hello! I am Sai Kiran, an aspiring Data Analyst. This portfolio showcases my skills, projects and experience in the field of data analysis.</p>
+
+            <button>View My Work</button>
+        </section>
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+                
+                <img src="profile.png" alt="Profile Picture" class="profile-image">
+
+                <p>I am an aspiring Data Analyst with a background in Computer Science.
+                I enjoy working with data, identifying patterns, and creating meaningful
+                insights using SQL, Excel, Power BI, and Python.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <li>Python Programming</li>
+                <li>SQL</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+            </ul>
+
+        </section>
+
+        <section id="projects">
+
+            <h2>My Projects</h2>
+
+            <div class="project-card">
+                <h3>E-commerce Data Analysis</h3>
+                <p>
+                    Analyzed e-commerce data using SQL, Excel, and Power BI
+                    to identify sales trends and business insights.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Customer Analysis</h3>
+                <p>
+                    Analyzed customer data to understand customer behavior,
+                    spending patterns, and business performance.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
+
+            <ul>
+                <li>Email: saikiran@example.com</li>
+                <li>LinkedIn: <a href="#">My LinkedIn Profile</a> </li>
+            </ul>
+
+        </section>
+
+        <footer>
+        <p>&copy; 2026 Sai Kiran. All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
