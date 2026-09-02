@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Login Page</title>
+
+        <style>
+
+            body {
+                background-color: lightgray;
+                font-family: Arial;
+            }
+
+            h1 {
+                text-align: center;
+                color: darkblue;
+            }
+
+            form {
+                background-color: white;
+                max-width: 400px;
+                margin: 30px auto;
+                padding: 30px;
+                border: 1px solid gray;
+                border-radius: 10px;
+            }
+
+            .input-field {
+                width: 100%;
+                padding: 10px;
+                margin-top: 8px;
+                border: 1px solid gray;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            .login-options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .login-button {
+                background-color: darkblue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+
+            .login-button:hover {
+                background-color:steelblue;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Welcome to the Login Page</h1>
+
+        <form>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="input-field" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input-field" required>
+            </div>
+
+            <div class="login-options">
+
+                <div>
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+            
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit" class="login-button">Login</button>
+            </div>
+
+        </form>
+    </body>
+</html>
