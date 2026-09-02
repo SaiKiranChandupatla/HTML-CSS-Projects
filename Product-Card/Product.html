@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+          <title>Product Card</title>
+          
+          <style>
+            
+            body {
+                background-color: lightgray;
+                font-family: Arial;
+            }
+
+            h2{
+                color: darkblue;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+
+            img {
+                max-width: 100%;
+                height: 250px;
+                border-radius: 10px;
+            }
+
+            h1 {
+                text-align: center;
+                color: darkblue;
+                margin-top: 30px;
+            }
+
+            .product-card {
+                background-color: white;
+                max-width: 400px;
+                margin: 30px 0;
+                padding: 30px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 4px 8px gray;
+            }
+
+            .product-description {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            button {
+                background-color: darkblue;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background-color: steelblue;
+            }
+
+            .product-card:hover {
+                box-shadow: 0 8px 16px gray;
+            }
+
+            .products-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+          </style>
+
+        </head>
+
+        <h1>Our Products</h1>
+            <div class="products-container">
+    
+                <div class = "product-card">
+                    <body>
+
+                        <img src="headphones.jpg" alt="Headphones">
+                        
+                        <h2>Product Name: Wireless Headphones</h2>
+                        
+                        <p style="font-weight: bold; font-size: 18px;">Price:₹1,999</p>
+
+                        <p class="product-description">High-quality wireless headphones with excellent sound and battery life.</p>
+
+                        <button>Buy Now</button>
+                    </body>
+                </div>
+
+                <div class = "product-card">
+                    <body>
+
+                        <img src="smartwatch.jpg" alt="Smartwatch">
+                        
+                        <h2>Product Name: Smartwatch</h2>
+                        
+                        <p style="font-weight: bold; font-size: 18px;">Price:₹2,999</p>
+
+                        <p class="product-description">High-quality smartwatch with excellent features and battery life.</p>
+
+                        <button>Buy Now</button>
+                    </body>
+                </div>
+
+            </div>
+</html>
